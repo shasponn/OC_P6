@@ -1,0 +1,257 @@
+/*
+Theme name: Mon theme enfant
+Description: Thème enfant basé sur le thème kadence
+Template: kadence
+version: 1.0.0
+Tags: Planty, boissons, boutique
+Text Domain: Planty
+*/
+
+
+/* CONTACT FORM CONTACT */
+
+#wpcf7-f158-p8-o1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "syne";
+}
+
+#wpcf7-f158-p8-o1 .send_button {
+    background-color: #E0B9B4;
+    height: 55px;
+    width: 198px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+#wpcf7-f158-p8-o1 .send_button:hover {
+    background-color: #C02E44;
+}
+
+
+
+/*-----formulaire-commande-image-------*/
+
+#count_form{
+    padding: 0px 0px 40px 0px;
+}
+
+.count_item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#wpcf7-f172-p10-o1 .count_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count_image {
+    width: 250px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.count_image img {
+    width: 100%;
+}
+
+.count_text {
+    position: absolute;
+}
+
+.count_text h2 {
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+@media screen and (max-width: 640px){
+    .count_container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .count_item{
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 516px){
+    .count_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+}
+
+/*-----formulaire-commande-count-------*/
+
+#form_livraison{
+    padding: 40px 0px 0px 0px;
+}
+.minus_plus_count span {
+    cursor: pointer;
+}
+
+.minus_plus_count {
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 56px;
+}
+
+.counter {
+    width: 31px;
+    height: 30px;
+    color: #f2f2f2;
+    background-color: #DC9F96;
+    text-align: center;
+}
+
+.plus {
+    border-radius: 0px 4px 0px 0px;
+    position: absolute;
+    z-index: 1;
+    left: 24%;
+    top: 0;
+    border-bottom: 1px solid #fff;
+    z-index: 2;
+}
+
+.minus {
+    border-radius: 0px 0px 4px 0px;
+    position: absolute;
+    left: 24%;
+    bottom: 0;
+    z-index: 1;
+}
+
+#wpcf7-f172-p10-o1 .minus_plus_count input {
+    height: 56px;
+    width: 60px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.minus_plus_count input[type="text" i] {
+    padding: 0px;
+}
+
+/*---btn ok--*/
+
+.ct_btn {
+    width: 250px;
+    position: relative;
+}
+
+
+#wpcf7-f172-p10-o1 .ct_btn .count_btn {
+    background-color: #E0B9B4;
+    width: 100px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+}
+
+#wpcf7-f172-p10-o1 .ct_btn .count_btn:hover {
+    background-color: #C02E44;
+}
+
+
+/*FORMULAIRE LIVRAISON-------------------------*/
+
+
+.form_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#wpcf7-f172-p10-o1 .comm_btn {
+    position: relative;
+    height: 150px;
+}
+
+#wpcf7-f172-p10-o1 .commander_btn {
+    left: 41%;
+    right: 58%;
+    top: 30%;
+    position: absolute;
+    background-color: #E0B9B4;
+    height: 55px;
+    width: 198px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+#wpcf7-f172-p10-o1 .commander_btn:hover {
+    background-color: #C02E44;
+}
+
+#wpcf7-f172-p10-o1 h2,
+label {
+    color: white;
+}
+
+#wpcf7-f172-p10-o1 .input_text {
+    height: 71px;
+    width: 500px;
+    border-radius: 7px;
+}
+
+#wpcf7-f172-p10-o1 .form_container hr {
+    border-left: 1px solid #fff;
+    display: inline-block;
+    height: 447px;
+    margin: 0px 20px;
+}
+
+@media screen and (max-width: 640px){
+    .form_container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    
+        #wpcf7-f172-p10-o1 .form_container hr {
+            height: 1px;
+            margin: 40px 0px;
+        }
+
+        #wpcf7-f172-p10-o1 .commander_btn {
+            left: 25%;
+            right: 25%;
+            top: 30%;
+        }
+    }
+
+
+/*-------------------HOOK WORDPRESS-----------------*/
+
+
+#primary-menu li a {
+    text-decoration: none;
+    padding: 0px 20px;
+    color: black;
+}
+
+#primary-menu li a:hover{
+    font-weight: 600;
+}
+
+#footer-menu li a .title{
+    display: none;
+}
