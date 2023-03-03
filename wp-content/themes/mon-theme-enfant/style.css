@@ -10,14 +10,26 @@ Text Domain: Planty
 
 /* CONTACT FORM CONTACT */
 
-#wpcf7-f158-p8-o1 {
+#contact_form{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "syne";
+    justify-content: space-evenly;
 }
 
-#wpcf7-f158-p8-o1 .send_button {
+.contact__form_container .nom_form, .contact__form_container .email_form{
+    width: 383px;
+    height: 71px;
+}
+
+#contact_form label {
+    color: black;
+}
+
+.contact__form_container .message_form{
+    height: 237px;
+    width: 383px;
+}
+
+#contact_form .btn_contact_form {
     background-color: #E0B9B4;
     height: 55px;
     width: 198px;
@@ -25,12 +37,33 @@ Text Domain: Planty
     transition: .3s ease-in-out;
 }
 
-#wpcf7-f158-p8-o1 .send_button:hover {
+#contact_form .btn_contact_form:hover {
     background-color: #C02E44;
 }
 
+.contact__form_container .contact__form_btn{
+    position: relative;
+}
 
+.btn_contact_form{
+    position:absolute;
+    left:30%;
+    z-index: 10;
+}
 
+@media screen and (max-width: 360px){
+    .contact__form_container .nom_form, .contact__form_container .email_form{
+        width: 340px;
+    }
+
+    .contact__form_container .message_form{
+        width: 340px;
+    }
+
+    .btn_contact_form{
+        left:25%;
+    }
+}
 /*-----formulaire-commande-image-------*/
 
 #count_form{
