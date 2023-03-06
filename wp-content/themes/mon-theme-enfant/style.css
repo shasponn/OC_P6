@@ -52,16 +52,12 @@ Text Domain: Planty
 }
 
 @media screen and (max-width: 360px){
-    .contact__form_container .nom_form, .contact__form_container .email_form{
-        width: 340px;
-    }
-
-    .contact__form_container .message_form{
-        width: 340px;
+    .contact__form_container .nom_form, .contact__form_container .email_form, .contact__form_container .message_form{
+        width: 310px;
     }
 
     .btn_contact_form{
-        left:25%;
+        left:20%;
     }
 }
 /*-----formulaire-commande-image-------*/
@@ -265,8 +261,7 @@ label {
         }
 
         #wpcf7-f172-p10-o1 .commander_btn {
-            left: 25%;
-            right: 25%;
+            left: 15%;
             top: 30%;
         }
     }
